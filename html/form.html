@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+    <div>
+        <form>
+            Name:<input type="text" name="txtName" required placeholder="Please Enter your Name" /> <br />
+            Father Name:<input type="text" name="txtFatherName" required  placeholder="Please Enter Your Father Name"/><br />
+            Email Address:<input type="email" name="txtEmailAddress" required placeholder="Please Enter your Educational Email" size=40 /><br />
+            Gender:<input type="radio" name="rdGender" value="Male" />Male
+            <input type="radio" name="rdGender" value="Female"/> Female<br />
+            Higher Degree:
+            <select name="selHigherEducation">
+                <option value="--SELECT--">--Select--</option>
+                <option value="Master">Master</option>
+                <option vaue="BS">BS</option>
+                <option value="Inter">Inter</option>
+                <option value="Metric">Metric</option>
+                <option value="UnderMetric">Under Metric</option>
+            </select><br />
+            Note:<textarea col=10 rows=5 placeholder="Right Some thing about yourself"></textarea><br />
+            Password<input type="password" name='txtpassword' /><br />
+            <h1>HTML5 New Input Types</h1>
+            Color:<input type="color" name="txtColor" /><br />
+            DOB:<input type="date" name="txtDOB" /><br />
+            Date Time:<input type="number" name="txttime" /><br />
+
+            Range<input type="range" name="txtRange" /><br />
+            <input type="reset" value="Clear" />
+            <input type="submit" value="Save" name="btnSubmit" />
+        </form>
+    </div>
+</body>
+</html>
