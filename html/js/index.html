@@ -34,6 +34,11 @@
             $("#WelcomeMessage").html("<h1>Welcome Mr."+$(this).val()+" To Erozgaar</h1>");
             alert($("#WelcomeMessage").html());
         })
+        $("#btnAdd").click(function(){
+            var value1=$("#txtNumber1").val();
+            var value2=$("#txtNumber2").val();
+            alert(parseInt(value1)+parseInt(value2));
+        });
     });
     </script>
     <style>
@@ -66,5 +71,9 @@
 
     <input type="text" id="txtName" />
     <div id="WelcomeMessage"></div>
+
+    <input type="number" id="txtNumber1" />
+    <input type="number" id="txtNumber2" />
+    <button id="btnAdd">Add</button>
 </body>
 </html>
