@@ -1,7 +1,9 @@
 # GitHub Tutorial
 # Git Commands
 <p>First Init The Directory by using command</p>
+```
 > git init
+```
 <p>Add your all work to Staging Area</p>
 > git add file name
 or
