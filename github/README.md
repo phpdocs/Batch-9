@@ -1,12 +1,11 @@
 # GitHub Tutorial
 # Git Commands
 <p>First Init The Directory by using command</p>
-```
-git init
-```
+```git init```
 <p>Add your all work to Staging Area</p>
 > git add file name
 or
-> git add -A
+```git add -A
+```
 <p>Commit your all work to Repo</p>
 > git commit -m "Message for Repo"
