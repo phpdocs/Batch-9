@@ -2,7 +2,8 @@
     if(isset($_POST['btnLogin'])){ //Verify Form Submission
         $UserName=$_POST['txtUserName'];
         $Password=$_POST['txtPassword'];
-
+        
+        echo $UserName;
         //Convert the Password into MD5 Format for Further Use
         $Password=md5($Password);
 
