@@ -1,3 +1,10 @@
+<?php 
+          session_start();
+          if(empty($_SESSION['user_id']) || $_SESSION['Auth']==false){
+            header("Location:login.php");
+          }
+          
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,20 +29,10 @@
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="logout.php">Logout</a>
                   </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownId">
-                          <a class="dropdown-item" href="#">Action 1</a>
-                          <a class="dropdown-item" href="#">Action 2</a>
-                      </div>
-                  </li>
+
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
           </div>
       </nav>
 
