@@ -6,6 +6,7 @@
     </div>
 
     <form action="add_user.php" method="post">
+    
         <div class="row justify-content-center mt-5">
             <div class="col-2 border-bottom pb-3">
                 UserName
@@ -63,8 +64,8 @@
                             <tr>
                                 <td><?php echo $row['user_id']; ?></td>
                                 <td><?php echo $row['user_name']; ?></td>
-                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                <td><a href="#" class="btn btn-danger">Delete</a></td>
+                                <td><a href="update.php?userid=<?php echo $row['user_id']; ?>" class="btn btn-primary">Edit</a></td>
+                                <td><a href="delete.php?userid=<?php echo $row['user_id']; ?>" class="btn btn-danger">Delete</a></td>
                             </tr>
                         <?php
                         }
