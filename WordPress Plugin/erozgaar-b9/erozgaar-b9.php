@@ -40,15 +40,15 @@ define( 'EROZGAAR_B9_VERSION', '1.0.0' );
 add_filter( 'the_content', 'AppendPostHeaderFooter', 1 );
  
 
-//add_shortcode('e-rozgaar-batch#9','ErozgaarShortCode');
+add_shortcode('e-rozgaar-batch9','ErozgaarShortCode');
 
 function AppendPostHeaderFooter($content){
 	return '<h1>Hello Everyone</h1>'.$content.'<h1>Thanks for reading our Articles</h1>';
 }
 
-/*function ErozgaarShortCode($atts,$content=""){
+function ErozgaarShortCode($atts,$content=""){
 ?>
 	<H1>THIS IS EROZGAAR-BATCH#9 SHORTCODE EXAMPLE</H1>
 <?php
 	return "$content";
-}*/
+}
